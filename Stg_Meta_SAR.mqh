@@ -9,9 +9,9 @@
 
 // User input params.
 INPUT2_GROUP("Meta SAR strategy: main params");
-INPUT2 ENUM_STRATEGY Meta_SAR_Strategy_SAR_1st = STRAT_BANDS;  // Strategy on 1st SAR value after change
-INPUT2 ENUM_STRATEGY Meta_SAR_Strategy_SAR_2nd = STRAT_NONE;   // Strategy on 2nd SAR value after change
-INPUT2 ENUM_STRATEGY Meta_SAR_Strategy_SAR_3rd = STRAT_NONE;   // Strategy on 3rd+ SAR value after change
+INPUT2 ENUM_STRATEGY Meta_SAR_Strategy_SAR_1st = STRAT_MA_TREND;    // Strategy on 1st SAR value after change
+INPUT2 ENUM_STRATEGY Meta_SAR_Strategy_SAR_2nd = STRAT_CHAIKIN;     // Strategy on 2nd SAR value after change
+INPUT2 ENUM_STRATEGY Meta_SAR_Strategy_SAR_3rd = STRAT_OSCILLATOR;  // Strategy on 3rd+ SAR value after change
 INPUT3_GROUP("Meta SAR strategy: common params");
 INPUT3 float Meta_SAR_LotSize = 0;                // Lot size
 INPUT3 int Meta_SAR_SignalOpenMethod = 0;         // Signal open method
